@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\bin\Debug\Alert Thrower.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\bin\Debug\Alert Thrower.exe
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\bin\Debug\Alert Thrower.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert_Thrower.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert Thrower.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert Thrower.exe
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert Thrower.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert_Thrower.frmAlertThrower.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert Thrower.csprojResolveAssemblyReference.cache
