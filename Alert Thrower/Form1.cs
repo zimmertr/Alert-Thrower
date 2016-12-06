@@ -23,8 +23,16 @@ namespace Alert_Thrower
             string input = Microsoft.VisualBasic.Interaction.InputBox("How many alerts would you like to throw?", "Alert Thrower", "1");
             int number;
 
-            int.TryParse(input, out number);
-            return number;
+            if (int.TryParse(input, out number))
+            {
+                return number;
+            }
+            else
+            {
+                MessageBox.Show("Your input was not recognized as a number. Sending a single alert.");
+                return 1;
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
