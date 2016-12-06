@@ -64,11 +64,14 @@ namespace Alert_Thrower
         //Throws an information alert. Indicates a significant successful operation.
         private void btnInformation_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
             int count = 1;
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is an Information Alert.", EventLogEntryType.Information, count);
+                short category = Convert.ToInt16(r.Next(0, 7));
+                int eventid = r.Next(0, count);
+                EventLog.WriteEntry(".NET Runtime", "This is an Information Alert.", EventLogEntryType.Information, eventid, category);
                 count += 1;
             }
         }
@@ -77,11 +80,14 @@ namespace Alert_Thrower
         //that could cause future problems 
         private void btnWarning_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
             int count = 1;
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is a Warning Alert.", EventLogEntryType.Warning, count);
+                short category = Convert.ToInt16(r.Next(0, 7));
+                int eventid = r.Next(0, count);
+                EventLog.WriteEntry(".NET Runtime", "This is a Warning Alert.", EventLogEntryType.Warning, eventid, category);
                 count += 1;
             }
         }
@@ -90,11 +96,14 @@ namespace Alert_Thrower
         //of functionality or data.
         private void btnError_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
             int count = 1;
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is an Error Alert.", EventLogEntryType.Error, count);
+                short category = Convert.ToInt16(r.Next(0, 7));
+                int eventid = r.Next(0, count);
+                EventLog.WriteEntry(".NET Runtime", "This is an Error Alert.", EventLogEntryType.Error, eventid, category);
                 count += 1;
             }
         }
@@ -103,11 +112,14 @@ namespace Alert_Thrower
         //is successful. 
         private void btnSuccessAudit_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
             int count = 1;
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit, count);
+                short category = Convert.ToInt16(r.Next(0, 7));
+                int eventid = r.Next(0, count);
+                EventLog.WriteEntry(".NET Runtime", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit, eventid, category);
                 count += 1;
             }
         }
@@ -115,11 +127,14 @@ namespace Alert_Thrower
         //Throws a FailureAuidt alert. Indicates a security event that occurs when an audited access attempt fails.
         private void btnFailureAudit_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
             int count = 1;
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit, count);
+                short category = Convert.ToInt16(r.Next(0, 7));
+                int eventid = r.Next(0, count);
+                EventLog.WriteEntry(".NET Runtime", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit, eventid, category);
                 count += 1;
             }
         }
