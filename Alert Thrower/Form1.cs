@@ -38,22 +38,50 @@ namespace Alert_Thrower
 
         private void btnWarning_Click(object sender, EventArgs e)
         {
-            EventLog.WriteEntry("logger", "This is a Warning Alert.", EventLogEntryType.Warning);
+            int number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How Many?", "How many errors would you like to throw?", "1"));
+            int count = 1;
+
+            while (count <= number)
+            {
+                EventLog.WriteEntry("logger", "This is a Warning Alert.", EventLogEntryType.Warning);
+                count += 1;
+            }
         }
 
         private void btnError_Click(object sender, EventArgs e)
         {
-            EventLog.WriteEntry("logger", "This is an Error Alert.", EventLogEntryType.Error);
+            int number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How Many?", "How many errors would you like to throw?", "1"));
+            int count = 1;
+
+            while (count <= number)
+            {
+                EventLog.WriteEntry("logger", "This is an Error Alert.", EventLogEntryType.Error);
+                count += 1;
+            }
         }
 
         private void btnSuccessAudit_Click(object sender, EventArgs e)
         {
-            EventLog.WriteEntry("logger", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit);
+            int number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How Many?", "How many errors would you like to throw?", "1"));
+            int count = 1;
+
+            while (count <= number)
+            {
+                EventLog.WriteEntry("logger", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit);
+                count += 1;
+            }
         }
 
         private void btnFailureAudit_Click(object sender, EventArgs e)
         {
-            EventLog.WriteEntry("logger", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit);
+            int number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How Many?", "How many errors would you like to throw?", "1"));
+            int count = 1;
+
+            while (count <= number)
+            {
+                EventLog.WriteEntry("logger", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit);
+                count += 1;
+            }
         }
     }
 }
