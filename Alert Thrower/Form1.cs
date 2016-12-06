@@ -22,7 +22,7 @@ namespace Alert_Thrower
 
         private int specifyAmount()
         {
-            number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How Many?", "How many alerts would you like to throw?", "1"));
+            number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How many alerts would you like to throw?", "Alert Thrower", "1"));
             return number;
         }
 
