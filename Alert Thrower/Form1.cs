@@ -42,7 +42,7 @@ namespace Alert_Thrower
                     return number;
                 }
             }
-            else if(input == "")
+            else if (input == "")
             {
                 return 0;
             }
