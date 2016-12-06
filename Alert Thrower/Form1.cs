@@ -42,6 +42,10 @@ namespace Alert_Thrower
                     return number;
                 }
             }
+            else if(input == "")
+            {
+                return 0;
+            }
             else
             {
                 MessageBox.Show("Your input was not recognized as a valid integer. Sending a single alert.");
