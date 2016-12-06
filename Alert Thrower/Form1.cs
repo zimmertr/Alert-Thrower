@@ -44,7 +44,7 @@ namespace Alert_Thrower
             }
             else
             {
-                MessageBox.Show("Your input was not recognized as a number. Sending a single alert.");
+                MessageBox.Show("Your input was not recognized as a valid integer. Sending a single alert.");
                 return 1;
             }
 
