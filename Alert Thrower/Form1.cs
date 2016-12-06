@@ -71,7 +71,9 @@ namespace Alert_Thrower
             {
                 short category = Convert.ToInt16(r.Next(0, 7));
                 int eventid = r.Next(0, count);
-                EventLog.WriteEntry(".NET Runtime", "This is an Information Alert.", EventLogEntryType.Information, eventid, category);
+                Byte[] rawData = new Byte[10];
+                r.NextBytes(rawData);
+                EventLog.WriteEntry(".NET Runtime", "This is an Information Alert.", EventLogEntryType.Information, eventid, category, rawData);
                 count += 1;
             }
         }
@@ -87,7 +89,9 @@ namespace Alert_Thrower
             {
                 short category = Convert.ToInt16(r.Next(0, 7));
                 int eventid = r.Next(0, count);
-                EventLog.WriteEntry(".NET Runtime", "This is a Warning Alert.", EventLogEntryType.Warning, eventid, category);
+                Byte[] rawData = new Byte[10];
+                r.NextBytes(rawData);
+                EventLog.WriteEntry(".NET Runtime", "This is a Warning Alert.", EventLogEntryType.Warning, eventid, category, rawData);
                 count += 1;
             }
         }
@@ -103,7 +107,9 @@ namespace Alert_Thrower
             {
                 short category = Convert.ToInt16(r.Next(0, 7));
                 int eventid = r.Next(0, count);
-                EventLog.WriteEntry(".NET Runtime", "This is an Error Alert.", EventLogEntryType.Error, eventid, category);
+                Byte[] rawData = new Byte[10];
+                r.NextBytes(rawData);
+                EventLog.WriteEntry(".NET Runtime", "This is an Error Alert.", EventLogEntryType.Error, eventid, category, rawData);
                 count += 1;
             }
         }
@@ -119,7 +125,9 @@ namespace Alert_Thrower
             {
                 short category = Convert.ToInt16(r.Next(0, 7));
                 int eventid = r.Next(0, count);
-                EventLog.WriteEntry(".NET Runtime", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit, eventid, category);
+                Byte[] rawData = new Byte[10];
+                r.NextBytes(rawData);
+                EventLog.WriteEntry(".NET Runtime", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit, eventid, category, rawData);
                 count += 1;
             }
         }
@@ -134,7 +142,9 @@ namespace Alert_Thrower
             {
                 short category = Convert.ToInt16(r.Next(0, 7));
                 int eventid = r.Next(0, count);
-                EventLog.WriteEntry(".NET Runtime", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit, eventid, category);
+                Byte[] rawData = new Byte[10];
+                r.NextBytes(rawData);
+                EventLog.WriteEntry(".NET Runtime", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit, eventid, category, rawData);
                 count += 1;
             }
         }
