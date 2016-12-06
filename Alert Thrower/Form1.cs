@@ -18,6 +18,8 @@ namespace Alert_Thrower
             InitializeComponent();
         }
 
+        //helper method to prompt the user to specify the number of desired alerts to be created. 
+        //basic error handling to ensure that only valid integers are provided.
         private int specifyAmount()
         {
             string input = Microsoft.VisualBasic.Interaction.InputBox("How many alerts would you like to throw?", "Alert Thrower", "1");
@@ -48,12 +50,14 @@ namespace Alert_Thrower
 
         }
 
+        //Create an event log object
         private void Form1_Load(object sender, EventArgs e)
         {
             if (!EventLog.SourceExists(".NET Runtime"))
                 EventLog.CreateEventSource(".NET Runtime", "Application");
         }
 
+        //Throws an information alert. Indicates a significant successful operation.
         private void btnInformation_Click(object sender, EventArgs e)
         {
             int count = 1;
@@ -65,6 +69,8 @@ namespace Alert_Thrower
             }
         }
 
+        //Throws a warning alert. Indicates a problem that is not immediatly significant, but that may signify conditions
+        //that could cause future problems 
         private void btnWarning_Click(object sender, EventArgs e)
         {
             int count = 1;
@@ -76,6 +82,8 @@ namespace Alert_Thrower
             }
         }
 
+        //Throws an error alert. Indicates a significant problem that the user should know about; usually a loss 
+        //of functionality or data.
         private void btnError_Click(object sender, EventArgs e)
         {
             int count = 1;
@@ -87,6 +95,8 @@ namespace Alert_Thrower
             }
         }
 
+        //Throws a SuccessfulAudit alert. Indicates a security event that occurs when an audited access attempt
+        //is successful. 
         private void btnSuccessAudit_Click(object sender, EventArgs e)
         {
             int count = 1;
@@ -98,6 +108,7 @@ namespace Alert_Thrower
             }
         }
 
+        //Throws a FailureAuidt alert. Indicates a security event that occurs when an audited access attempt fails.
         private void btnFailureAudit_Click(object sender, EventArgs e)
         {
             int count = 1;
