@@ -25,7 +25,15 @@ namespace Alert_Thrower
 
             if (int.TryParse(input, out number))
             {
-                return number;
+                if (number > 1000)
+                {
+                    MessageBox.Show("There really isn't any reason to send " + number + " alerts. Sending too many alerts will take a long time. Sending 1000 alerts instead.");
+                    return 1000;
+                }
+                else
+                {
+                    return number;
+                }
             }
             else
             {
