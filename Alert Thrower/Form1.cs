@@ -68,7 +68,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is an Information Alert.", EventLogEntryType.Information);
+                EventLog.WriteEntry(".NET Runtime", "This is an Information Alert.", EventLogEntryType.Information, count);
                 count += 1;
             }
         }
@@ -81,7 +81,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is a Warning Alert.", EventLogEntryType.Warning);
+                EventLog.WriteEntry(".NET Runtime", "This is a Warning Alert.", EventLogEntryType.Warning, count);
                 count += 1;
             }
         }
@@ -94,7 +94,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is an Error Alert.", EventLogEntryType.Error);
+                EventLog.WriteEntry(".NET Runtime", "This is an Error Alert.", EventLogEntryType.Error, count);
                 count += 1;
             }
         }
@@ -107,7 +107,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit);
+                EventLog.WriteEntry(".NET Runtime", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit, count);
                 count += 1;
             }
         }
@@ -119,7 +119,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry(".NET Runtime", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit);
+                EventLog.WriteEntry(".NET Runtime", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit, count);
                 count += 1;
             }
         }
