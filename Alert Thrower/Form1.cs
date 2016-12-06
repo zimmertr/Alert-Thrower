@@ -50,8 +50,8 @@ namespace Alert_Thrower
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (!EventLog.SourceExists("logger"))
-                EventLog.CreateEventSource("logger", "Application");
+            if (!EventLog.SourceExists(".NET Runtime"))
+                EventLog.CreateEventSource(".NET Runtime", "Application");
         }
 
         private void btnInformation_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry("logger", "This is an Information Alert.", EventLogEntryType.Information);
+                EventLog.WriteEntry(".NET Runtime", "This is an Information Alert.", EventLogEntryType.Information);
                 count += 1;
             }
         }
@@ -71,7 +71,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry("logger", "This is a Warning Alert.", EventLogEntryType.Warning);
+                EventLog.WriteEntry(".NET Runtime", "This is a Warning Alert.", EventLogEntryType.Warning);
                 count += 1;
             }
         }
@@ -82,7 +82,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry("logger", "This is an Error Alert.", EventLogEntryType.Error);
+                EventLog.WriteEntry(".NET Runtime", "This is an Error Alert.", EventLogEntryType.Error);
                 count += 1;
             }
         }
@@ -93,7 +93,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry("logger", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit);
+                EventLog.WriteEntry(".NET Runtime", "This is a Success Audit Alert.", EventLogEntryType.SuccessAudit);
                 count += 1;
             }
         }
@@ -104,7 +104,7 @@ namespace Alert_Thrower
             int amount = specifyAmount();
             while (count <= amount)
             {
-                EventLog.WriteEntry("logger", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit);
+                EventLog.WriteEntry(".NET Runtime", "This is a Failure Audit Alert.", EventLogEntryType.FailureAudit);
                 count += 1;
             }
         }
