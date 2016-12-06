@@ -13,8 +13,6 @@ namespace Alert_Thrower
 {
     public partial class frmAlertThrower : Form
     {
-        int number;
-
         public frmAlertThrower()
         {
             InitializeComponent();
@@ -22,7 +20,10 @@ namespace Alert_Thrower
 
         private int specifyAmount()
         {
-            number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How many alerts would you like to throw?", "Alert Thrower", "1"));
+            string input = Microsoft.VisualBasic.Interaction.InputBox("How many alerts would you like to throw?", "Alert Thrower", "1");
+            int number;
+
+            int.TryParse(input, out number);
             return number;
         }
 
