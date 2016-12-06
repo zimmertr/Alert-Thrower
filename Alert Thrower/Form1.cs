@@ -26,7 +26,14 @@ namespace Alert_Thrower
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            EventLog.WriteEntry("logger", "This is an Information Alert.", EventLogEntryType.Information);
+            int number = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("How Many?", "How many errors would you like to throw?", "1"));
+            int count = 1;
+
+            while (count <= number)
+            {
+                EventLog.WriteEntry("logger", "This is an Information Alert.", EventLogEntryType.Information);
+                count += 1;
+            }
         }
 
         private void btnWarning_Click(object sender, EventArgs e)
