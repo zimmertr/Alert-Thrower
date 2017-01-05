@@ -148,5 +148,18 @@ namespace Alert_Thrower
                 count += 1;
             }
         }
+
+        private void btnRuntime_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int denominator = 0;
+
+                // this should fail but also write to the system eventlog... but it doesn't yet.  
+                // (the form/ui is interfering with this, a console app works that way)
+                int result = 1 / denominator;
+            }
+            catch (Exception ex) { }
+        }
     }
 }
