@@ -6,6 +6,7 @@ Alert Thrower was a program written in C# to send alerts of various types to the
 - Has basic error handling.
 
 **Prompt**
+
 ![Alt text](https://raw.githubusercontent.com/zimmertr/Alert-Thrower/master/program.png "Program with Alert Box")
 
 **Event Viewer after Execution**
