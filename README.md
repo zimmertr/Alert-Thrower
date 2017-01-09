@@ -3,7 +3,8 @@ Alert Thrower was a program written in C# to send alerts of various types to the
 
 ```
 - EventID, Category, and a random byte if size 10 is generated for each alert. 
-- The user can specify how many alerts to send to the log. Restricted to 1000 per submission for performance reasons. 
+- The user can specify how many alerts to send to the log. 
+- # of alerts restricted to 1000 per submission for performance reasons. 
 - Has basic error handling.
 ```
 
