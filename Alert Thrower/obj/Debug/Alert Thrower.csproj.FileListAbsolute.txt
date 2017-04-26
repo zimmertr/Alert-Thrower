@@ -7,3 +7,12 @@ c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert
 c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert Thrower.pdb
 c:\users\administrator\documents\visual studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert_Thrower.frmAlertThrower.resources
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Alert Thrower\Alert Thrower\obj\Debug\Alert Thrower.csprojResolveAssemblyReference.cache
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\bin\Debug\Alert Thrower.exe.config
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\obj\Debug\Alert Thrower.exe
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\obj\Debug\Alert Thrower.pdb
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\bin\Debug\Alert Thrower.exe
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\bin\Debug\Alert Thrower.pdb
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\obj\Debug\Alert Thrower.csprojResolveAssemblyReference.cache
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\obj\Debug\Alert_Thrower.frmAlertThrower.resources
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\obj\Debug\Alert_Thrower.Properties.Resources.resources
+C:\clients\bluemedora\Alert-Thrower\Alert Thrower\obj\Debug\Alert Thrower.csproj.GenerateResource.Cache
